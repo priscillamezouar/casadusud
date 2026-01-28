@@ -1,0 +1,29 @@
+@use "../settings";
+
+form {
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  max-width: 600px;
+  width: 100%;
+  text-align: left;
+
+  label,
+  input,
+  textarea {
+    width: 100%;
+    resize: none;
+  }
+
+  input,
+  textarea {
+    outline-color: settings.$color1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid settings.$text;
+  }
+  button {
+    margin-top: 30px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+@use "../settings";
+
+.title-page {
+  background: settings.$color1;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px settings.$blackShadow;
+  color: settings.$white;
+  padding: 50px;
+  text-align: center;
+
+  * {
+    color: settings.$white;
+  }
+}

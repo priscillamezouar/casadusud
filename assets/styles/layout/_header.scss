@@ -1,0 +1,43 @@
+@use "../settings";
+
+header {
+  padding: 20px 5vw;
+  box-shadow: 0 0 10px settings.$blackShadow;
+  margin-bottom: 1px;
+
+  .logo img {
+    max-height: 70px;
+  }
+
+  .menuIcons {
+    display: none;
+
+    @media screen and (max-width: 992px) {
+      display: block;
+    }
+
+    i {
+      font-size: 2rem;
+      color: settings.$color1;
+    }
+
+    #closeIcon {
+      display: none;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 992px) {
+      display: none;
+      width: 100%;
+      padding: 30px;
+      flex-direction: column;
+    }
+  }
+}

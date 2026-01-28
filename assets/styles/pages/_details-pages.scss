@@ -1,0 +1,174 @@
+@use "../settings";
+
+#details-pages {
+  .intro {
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  #photos {
+    margin-top: 50px;
+
+    h2 {
+      margin-bottom: 50px;
+    }
+
+    img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px settings.$blackShadow;
+    }
+  }
+
+  #description,
+  #ce-que-propose-le-logement {
+    flex-direction: column;
+    align-items: start;
+    text-align: justify;
+    margin-top: 50px;
+  }
+
+  .title-studio {
+    display: block;
+    text-transform: uppercase;
+    color: settings.$color1;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+
+  #description {
+    .df {
+      margin-bottom: 20px;
+
+      * {
+        color: settings.$color1;
+      }
+    }
+  }
+
+  #ce-que-propose-le-logement,
+  #les-points-forts {
+    margin-top: 50px;
+
+    .item {
+      gap: 10px;
+      border: 1px solid settings.$border;
+      padding: 10px 20px;
+      border-radius: 10px;
+      box-shadow: inset 0 0 5px settings.$color1;
+
+      i {
+        color: settings.$color1;
+      }
+
+      sup {
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  #acces {
+    margin-top: 50px;
+  }
+
+  #reglement {
+    margin-top: 50px;
+
+    ul {
+      list-style: none;
+      li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+
+        i {
+          color: settings.$color1;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  #map {
+    margin-top: 50px;
+    img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px settings.$blackShadow;
+    }
+  }
+
+  #contact {
+    flex-direction: column;
+    margin-top: 50px;
+
+    .dg {
+      width: 100%;
+      grid-template-columns: 20% 80%;
+
+      @media screen and (max-width: 1200px) {
+        grid-template-columns: 30% 70%;
+      }
+
+      @media screen and (max-width: 994px) {
+        grid-template-columns: 1fr;
+      }
+
+      i {
+        color: settings.$color1;
+        font-size: 2rem;
+      }
+    }
+    .infos-contact {
+      margin-bottom: 50px;
+    }
+
+    .df-aic {
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 994px) {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: settings.$text;
+      font-weight: bold;
+      margin-left: calc(2rem + 20px);
+
+      @media screen and (max-width: 994px) {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+      }
+    }
+
+    .form-container {
+      border-left: 2px solid settings.$color1;
+      padding-left: 50px;
+    }
+  }
+
+  .legal {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    h2,
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}

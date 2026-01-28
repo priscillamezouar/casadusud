@@ -1,0 +1,10 @@
+@use "../settings";
+
+footer {
+  padding: 20px 5vw;
+  box-shadow: 0 0 10px settings.$blackShadow;
+
+  * {
+    font-size: 0.8rem;
+  }
+}

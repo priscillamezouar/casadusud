@@ -1,0 +1,25 @@
+@use "../settings";
+
+button {
+  background: settings.$color1;
+  border: 2px solid settings.$color1;
+  border-radius: 50px;
+  padding: 7px 20px;
+  color: settings.$white !important;
+  box-shadow: 0 0 5px settings.$blackShadow;
+  font-weight: bold;
+
+  &:hover {
+    box-shadow: inset 0 0 5px settings.$black;
+  }
+}
+
+.button2 {
+  background: settings.$white;
+  border: 2px solid settings.$white;
+  color: settings.$color1 !important;
+
+  &:hover {
+    box-shadow: inset 0 0 5px settings.$black;
+  }
+}

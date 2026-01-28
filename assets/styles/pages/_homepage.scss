@@ -1,0 +1,21 @@
+@use "../settings";
+
+#homepage {
+  background: url(../img/bg-homepage.webp) center/cover;
+  padding: 0;
+
+  .container {
+    padding: 50px 5vw;
+    min-height: 90vh;
+
+    .overlay {
+      flex-direction: column;
+      text-align: center;
+      gap: 50px;
+      padding: 5vw;
+      background: settings.$whiteOverlay;
+      box-shadow: 0 0 10px settings.$blackShadow;
+      border-radius: 10px;
+    }
+  }
+}
